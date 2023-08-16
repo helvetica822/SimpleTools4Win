@@ -42,7 +42,7 @@ try {
     }
 }
 finally {
-    if ($null -eq $client) {
+    if ($null -ne $client) {
         $client.Close()
     }
 }
